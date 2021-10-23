@@ -1,0 +1,43 @@
+#showCodeBtns {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+.code-btn {
+  background-color: rgb(235, 235, 235);
+  color: rgb(110, 107, 107);
+  display: flex;
+  width: 200px;
+  border-radius: 3px;
+  margin: 10px;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+  border: 1px lightgray solid;
+}
+
+.code-btn:hover {
+  background-color: rgb(225, 225, 225);
+  transition: 0.3s;
+}
+
+.fa-html5 {
+  margin-right: 5px;
+  color: blue;
+}
+
+.fa-css3-alt {
+  margin-right: 5px;
+  color: red;
+}
+
+.fa-js-square {
+  margin-right: 5px;
+  color: rgb(228, 126, 10);
+}

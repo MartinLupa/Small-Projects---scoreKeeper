@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/codebtnstyle.css" />
+    <link
+      rel="stylesheet"
+      href="node_modules/@fortawesome/fontawesome-free/css/all.css"
+    />
+    <title>Score Keeper</title>
+  </head>
+  <body>
+    <div
+      class="
+        wrapper
+        d-flex-column
+        justify-content-center
+        align-items-center
+        pt-5
+      "
+    >
+      <div class="main text-center pt-4">
+        <div class="top-container">
+          <div>
+            <h1>Score Keeper App</h1>
+            <hr />
+          </div>
+          <div id="scores">
+            <h2>
+              <div class="d-flex justify-content-center">
+                <div id="p1-score" class="p1-score pr-2">0</div>
+                to
+                <div id="p2-score" class="p2-score pl-2">0</div>
+              </div>
+            </h2>
+            <p>Use the buttons below to keep score</p>
+            <h6>
+              Playing to
+              <label for="winningScore"></label>
+              <select name="winningScore" id="winningScore">
+                <option id="valSelector" value="3">3</option>
+                <option id="valSelector" value="5">5</option>
+                <option id="valSelector" value="10">10</option>
+                <option id="valSelector" value="15">15</option>
+                <option id="valSelector" value="20">20</option>
+              </select>
+            </h6>
+          </div>
+        </div>
+        <div class="btn-container">
+          <button id="p1-btn" class="btn btn-primary btn-1">
+            +1 Player One
+          </button>
+          <button id="p2-btn" class="btn btn-success btn-2">
+            +1 Player Two
+          </button>
+          <button id="reset-btn" class="btn btn-danger btn-reset">Reset</button>
+        </div>
+      </div>
+      <div>
+        <div id="showCodeBtns">
+          <form action="/htmlcode.html" class="hidden">
+            <button class="code-btn html-btn">
+              <i id="codeIcon" class="fab fa-html5"></i>HTML Code
+            </button>
+          </form>
+          <form action="/csscode.html" class="hidden">
+            <button class="code-btn css-btn">
+              <i id="codeIcon" class="fab fa-css3-alt"></i>CSS Code
+            </button>
+          </form>
+          <form action="/jscode.html">
+            <button class="code-btn js-btn">
+              <i id="codeIcon" class="fab fa-js-square"></i>JavaScript Code
+            </button>
+          </form>
+        </div>
+        <footer>
+          <p>Martín Lupa - 2021</p>
+          <p>
+            <i id="codeIcon" class="fab fa-github"></i
+            >https://github.com/MartinLupa
+          </p>
+        </footer>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
