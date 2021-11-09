@@ -1,5 +1,7 @@
 # Small-Projects---scoreKeeper
 
+Deploy: https://martinlupa.github.io/Small-Projects---scoreKeeper/
+
 Use of:
 
 <ul>
